@@ -31,6 +31,7 @@ int dyn_table_is_empty(const struct dyn_table_t * table) {
 
 int dyn_table_is_full(const struct dyn_table_t * table) {
 	// TO DO
+}
 
 int dyn_table_is_quasi_empty(const struct dyn_table_t * table) {
 	// TO DO
