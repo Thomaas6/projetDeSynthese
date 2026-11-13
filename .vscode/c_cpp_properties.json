@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "projetDeSynthese",
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "compilerPath": "gcc",
+            "cStandard": "c11",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
