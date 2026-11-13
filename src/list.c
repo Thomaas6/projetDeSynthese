@@ -18,19 +18,28 @@
  * @return le nouveau nœud créé
  */
 static struct list_node_t * new_list_node(void * data) {
-	// TO DO
+	struct list_node_t * node = malloc(sizeof(struct list_node_t)); // Alloue et crée un noeud  
+
+	node->data = data; // Initialise le noeud
+
+	node->predecessor = NULL; 
+	node->successor = NULL;
+
+	return node;
 }
 
 void * get_list_node_data(const struct list_node_t * node) {
-	// TO DO
+	assert(node); // Verifie si node existe
+	return node->data;
 }
 
 struct list_node_t * get_successor(const struct list_node_t* node) {
-	// TO DO
+	assert(node); // Verifie si node existe
+	return node->successor;
 }
 
 struct list_node_t * get_predecessor(const struct list_node_t * node) {
-	assert(node);
+	assert(node); // Verifie si node existe
 	return node->predecessor;
 }
 
