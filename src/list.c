@@ -44,15 +44,18 @@ struct list_node_t * get_predecessor(const struct list_node_t * node) {
 }
 
 void set_list_node_data(struct list_node_t * node, void * newData) {
-	// TO DO
+	assert(node); // Verifie si node existe
+	node->data = newData;
 }
 
 void set_successor(struct list_node_t * node, struct list_node_t * newSuccessor) {
-	// TO DO
+	assert(node); // Verifie si node existe
+	node->successor = newSuccessor;
 }
 
 void set_predecessor(struct list_node_t * node, struct list_node_t * newPredecessor) {
-	// TO DO
+	assert(node); // Verifie si node existe
+	node->predecessor = newPredecessor;
 }
 
 /********************************************************************
